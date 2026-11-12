@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ct1oowth6ti7x" path="res://assets/sprites/platforms.png" id="3_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://ck2nmia3ka6dx" path="res://assets/sprites/world_tileset.png" id="4_7jktm"]
 [ext_resource type="PackedScene" uid="uid://w48dbjq5jrqd" path="res://scenes/platform.tscn" id="5_7jktm"]
+[ext_resource type="PackedScene" uid="uid://428a1yoohky5" path="res://scenes/coin.tscn" id="6_ryrav"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ryrav"]
 texture = ExtResource("3_fc0e3")
@@ -272,6 +273,7 @@ tile_set = SubResource("TileSet_srsb4")
 
 [node name="player" type="CharacterBody2D" parent="." unique_id=492464924]
 z_index = 5
+collision_layer = 2
 script = ExtResource("1_e2o6t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1651463467]
@@ -299,3 +301,37 @@ autoplay = &"move"
 
 [node name="platform2" parent="." unique_id=998322899 instance=ExtResource("5_7jktm")]
 position = Vector2(148, -85)
+
+[node name="coin" parent="." unique_id=161910371 instance=ExtResource("6_ryrav")]
+position = Vector2(231, -169)
+
+[node name="coin4" parent="." unique_id=834551497 instance=ExtResource("6_ryrav")]
+position = Vector2(470, -89)
+
+[node name="coin8" parent="." unique_id=870850063 instance=ExtResource("6_ryrav")]
+position = Vector2(807, -87)
+
+[node name="coin9" parent="." unique_id=563211541 instance=ExtResource("6_ryrav")]
+position = Vector2(840, -86)
+
+[node name="coin10" parent="." unique_id=1220632858 instance=ExtResource("6_ryrav")]
+position = Vector2(888, -87)
+
+[node name="coin11" parent="." unique_id=1652008750 instance=ExtResource("6_ryrav")]
+position = Vector2(950.99994, -104)
+rotation = 1.4552022
+
+[node name="coin6" parent="." unique_id=700706654 instance=ExtResource("6_ryrav")]
+position = Vector2(696, -120)
+
+[node name="coin7" parent="." unique_id=1654429667 instance=ExtResource("6_ryrav")]
+position = Vector2(505, -116)
+
+[node name="coin5" parent="." unique_id=1622671729 instance=ExtResource("6_ryrav")]
+position = Vector2(343, -87)
+
+[node name="coin2" parent="." unique_id=2025321465 instance=ExtResource("6_ryrav")]
+position = Vector2(25, -151)
+
+[node name="coin3" parent="." unique_id=1757775471 instance=ExtResource("6_ryrav")]
+position = Vector2(105, -150)
