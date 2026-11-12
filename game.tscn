@@ -240,12 +240,12 @@ rotation = -0.0024592094
 sprite_frames = SubResource("SpriteFrames_2m21h")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.24431093
+frame_progress = 0.89270484
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=225422090]
 position = Vector2(0, -5)
 scale = Vector2(1.0000001, 1.0000001)
 shape = SubResource("CircleShape2D_srsb4")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=924518338]
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=924518338]
 zoom = Vector2(4, 4)
